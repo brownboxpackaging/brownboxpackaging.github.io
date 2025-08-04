@@ -76,5 +76,45 @@ module.exports = {
                 removeComments: true,
             },
         }),
+        new HtmlWebpackPlugin({
+            filename: 'about.html',
+            chunks: ['app'],
+            favicon: './src/images/favicon.ico',
+            template: './src/about.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+            },
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'products.html',
+            chunks: ['app'],
+            favicon: './src/images/favicon.ico',
+            template: './src/products.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+            },
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'facility.html',
+            chunks: ['app'],
+            favicon: './src/images/favicon.ico',
+            template: './src/facility.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+            },
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'contact.html',
+            chunks: ['app'],
+            favicon: './src/images/favicon.ico',
+            template: './src/contact.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+            },
+        }),
     ]
 };
